@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Nícolas Santos - Desenvolvedor Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sky: {
+              50:  '#f0f6fb',
+              100: '#e6f1fb',
+              200: '#c8dff0',
+              300: '#b5d4f4',
+              400: '#85b7eb',
+              500: '#5a8fb5',
+              600: '#378add',
+              700: '#185fa5',
+              800: '#0c447c',
+              900: '#042c53',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      left: 13px;
+      right: 13px;
+      height: 1px;
+      background: #85b7eb;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.28s cubic-bezier(.4, 0, .2, 1);
+    }
+    .nav-link:hover::after {
+      transform: scaleX(1);
+    }
+  </style>
+</head>
+<body class="bg-sky-50">
+
+  <header class="bg-white border-b border-sky-200">
+    <div class="max-w-6xl mx-auto px-10 h-14 flex items-center justify-between relative">
+
+      <div class="absolute left-1/2 -translate-x-1/2">
+        <nav>
+          <ul class="flex">
+            <li>
+              <a href="#sobre" class="nav-link block relative px-3 py-2 text-sm text-sky-500 rounded-lg tracking-wide hover:text-sky-700 hover:bg-sky-100 transition-colors duration-200">
+                Sobre
+              </a>
+            </li>
+            <li>
+              <a href="#habilidades" class="nav-link block relative px-3 py-2 text-sm text-sky-500 rounded-lg tracking-wide hover:text-sky-700 hover:bg-sky-100 transition-colors duration-200">
+                Habilidades
+              </a>
+            </li>
+            <li>
+              <a href="#projetos" class="nav-link block relative px-3 py-2 text-sm text-sky-500 rounded-lg tracking-wide hover:text-sky-700 hover:bg-sky-100 transition-colors duration-200">
+                Projetos
+              </a>
+            </li>
+            <li>
+              <a href="#contato" class="nav-link block relative px-3 py-2 text-sm text-sky-500 rounded-lg tracking-wide hover:text-sky-700 hover:bg-sky-100 transition-colors duration-200">
+                Contato
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="flex gap-1 ml-auto">
+        <a href="https://github.com/ncodebynicolas" target="_blank"
+           class="flex items-center justify-center w-8 h-8 rounded-lg text-sky-400 text-base hover:text-sky-700 hover:bg-sky-100 transition-colors duration-200">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/ncodebynicolas" target="_blank"
+           class="flex items-center justify-center w-8 h-8 rounded-lg text-sky-400 text-base hover:text-sky-700 hover:bg-sky-100 transition-colors duration-200">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://instagram.com/nicolaskyadi" target="_blank"
+           class="flex items-center justify-center w-8 h-8 rounded-lg text-sky-400 text-base hover:text-sky-700 hover:bg-sky-100 transition-colors duration-200">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+</body>
+</html>
